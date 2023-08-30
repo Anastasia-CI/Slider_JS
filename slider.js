@@ -18,13 +18,13 @@ const entities = [
       img: 'img/image3.png'
     }
   ]
-  //для навигации по точкам, добавляем функцию 
+  /*//для навигации по точкам, добавляем функцию 
   function sliderInit(entities, options) {
     if (!entities || !entities.length) return;
     options = options || {
       dots: false,
     };
-  }
+  }*/
   
   const city = document.querySelector('.city')
   const area = document.querySelector('.area')
@@ -37,10 +37,10 @@ const entities = [
     time.innerText = entities[index].time
     img.style.backgroundImage = `url(${entities[index].img})`
   }
-  //условие для навигации по точкам
+  /*//условие для навигации по точкам
   if (options.dots) {
     initDots();
-  }
+  }*/
   
   const prev = document.querySelector('.prev')
   const next = document.querySelector('.next')
@@ -66,7 +66,7 @@ const entities = [
        currentIndex += 1;
     }
   })
-  v1.addEventListener('click', () => {
+ /* v1.addEventListener('click', () => {
     if (currentIndex==0) {
         currentIndex = 0;
         dots.toggleClass('active')
@@ -108,4 +108,4 @@ const entities = [
       dotsWrapper.appendChild(dot);
     });
     sliderWrapper.appendChild(dotsWrapper);
-  }
+  }*/
