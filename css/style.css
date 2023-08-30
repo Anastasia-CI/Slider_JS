@@ -1,0 +1,211 @@
+@font-face {
+    src:url('../fonts/NunitoSans-Regular.ttf');
+    font-family: 'NunitoSans-Regular';
+}
+@font-face {
+    src:url('../fonts/NunitoSans-Italic.ttf');
+    font-family: 'NunitoSans-Italic';
+}
+@font-face {
+    src:url('../fonts/YesevaOne-Regular.ttf');
+    font-family: 'YesevaOne-Regular';
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'NunitoSans-Regular', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+/* HEDER и FOOTER Меню  */
+.fixed-container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.header-title, .header-button  {
+    font-size: 11px;
+    line-height: 15px;
+    color: #E3B873;
+}
+.header-title {
+    margin-left: 72px;
+    text-transform: uppercase;
+}
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 38px;
+    padding-bottom: 21px;
+    margin-right: 50px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+.header-menu {
+    margin-left: 23px;
+}
+.menu-item {
+    margin-left: 54px;
+}
+.menu-item:nth-child(4) {
+    position: relative;
+    left: 4px;
+}
+.menu li, .header-title2 {
+    list-style-type: none;
+    font-size: 11px;
+    line-height: 15px;
+}
+.menu-link:hover, .header-title2:hover, .gold, #title-project, .projects-menu-item .menu-link:hover, #information-title, .pig-content, #design-title, .type-of-design:hover, #contacts {
+    color: #E3B873;
+}
+.header-title2 {
+    margin-left: 54px;
+    padding-bottom: 3px;
+}
+.header-title2:hover {
+    text-decoration: underline;
+}
+
+/*Главная страница*/
+
+/* Примеры готовых проектов */
+.title {
+    font-family: 'YesevaOne-Regular';
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.projects {
+    background-color: #131313;
+    height: 1074px;
+}
+.projects-mobile {
+    display: none;
+}
+.projects-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    padding-top: 108px;
+    padding-right: 112px;
+}
+.projects-title-container {
+    display: flex;
+}
+.projects-container, .projects-dekstop {
+    display:flex;
+    justify-content: space-between;
+}
+.projects-container {   
+    padding-top: 50px;
+    margin-right: 114px;
+}
+.project-img-container {
+    text-align:center;
+    margin-left: 18px;
+    margin-right: 17px;
+    padding-left: 663px;
+    height: 482px;
+    background-image: url("../img/image1.png");
+    background-size: 100% 100%;
+}
+.projects-menu-item .menu-link {
+    margin-right: 60px;
+    font-family: 'YesevaOne-Regular';
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255, 0.3);
+}
+.projects-menu-item .menu-link:hover {
+    border-bottom: 1px #E3B873 solid;
+}
+#title-project, #design-title {
+    font-size: 27px;
+    line-height: 37px;
+}
+#title-project {
+    letter-spacing: -0.07em;
+    margin-top: -2px;
+}
+.projects-right-part {
+    margin-left: 115px;
+}
+.projects-content {
+    max-width: 442px;
+    font-size: 14px;
+    line-height: 27px;
+    padding-top: 25px;
+}
+.information-container{
+    display: flex;
+    height: 187px;
+    margin-top: 48px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.information-container-items {
+    min-width: 161px;
+    margin-right: 29px;
+    margin-bottom: 33px;
+}
+#information-title {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+.rectangle {
+    background: #E3B873;
+    width: 92px;
+    height: 1px;
+    margin-top: 52px;
+    margin-left: 8px;
+}
+.information-content {
+    display: block;
+    width: 100px;
+    height: 42px;
+    font-size: 13px;
+    line-height: 21px;
+}
+.navigator-container {
+    display: flex;
+    margin-top: 13px;
+}
+.prev, .next {
+    margin-top: 39px;
+    cursor: pointer;
+}
+#vector-1, #vector-5 {
+    position: relative;
+    top: 2px;
+}
+#vector-2, #vector-4 {
+    position: relative;
+    top: -4px;
+}
+#vector-2 {
+    position: relative;
+    left: -13px;
+}
+.dots {
+    margin-top: 44px;
+    margin-left: 17px;
+}
+.active {
+    fill-opacity: 1;
+}
+#vector-4 {
+    position: relative;
+    margin-left: 12px;
+    right: -14px;
+}
+#vector-5 {
+    right: -4px;
+}
+/* Описание онлайн-контроля проектов */
